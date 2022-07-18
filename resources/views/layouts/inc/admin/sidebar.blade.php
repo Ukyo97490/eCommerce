@@ -20,8 +20,8 @@
       </a>
       <div class="collapse" id="category">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="#">Buttons</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#">Typography</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Lien 1</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Lien 2</a></li>
         </ul>
       </div>
     </li>
@@ -36,8 +36,8 @@
       </a>
       <div class="collapse" id="products">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="#">Buttons</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#">Typography</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Lien 1</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Lien 2</a></li>
         </ul>
       </div>
     </li>
@@ -66,7 +66,7 @@
     <li class="nav-item">
       <a class="nav-link" href="documentation/documentation.html">
         <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-        <span class="menu-title">Home</span>
+        <span class="menu-title">Home Slider</span>
       </a>
     </li>
     <li class="nav-item">
