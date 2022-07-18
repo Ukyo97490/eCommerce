@@ -4,6 +4,10 @@
 
 <div class="row">
     <div class="col-md-12 grid-margin">
+        @if(session('message'))
+        <h6 class="alert alert-success">{{session('message')}}, </h6>
+        @endif
+
         <div class="d-flex justify-content-between flex-wrap">
             <div class="d-flex align-items-end flex-wrap">
                 <div class="me-md-3 me-xl-5">
