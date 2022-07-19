@@ -6,8 +6,8 @@
     <div class="col-md-12 grid-margin">
         <div class="card">
             <div class="card-header">
-                <h4>Categories</h4>
-                <a href="{{ url('admin/category/create') }}" class="btn btn-primary btn-sm text-white float-end">Retour</a>
+                <h4>Modifier Categorie</h4>
+                <a href="{{ url('admin/category') }}" class="btn btn-primary btn-sm text-white float-end">Retour</a>
             </div>
             <div class="card-body">
                 <form action="{{url('admin/category')}}" method="POST" enctype="multipart/form-data">
@@ -15,24 +15,17 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Nom*</label>
-                            <input type="text" name="name" class="form-control" />
-                            @error('name')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <input type="text" name="name" value="{{$category->name}}" class="form-control" />
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Slug*</label>
-                            <input type="text" name="slug" class="form-control" />
-                            @error('slug')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <input type="text" name="slug" value="{{$category->slug}}" class="form-control" />
+
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Description*</label>
-                            <textarea name="description" class="form-control" rows="3"></textarea>
-                            @error('description')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <textarea name="description" value="{{$category->description}}" class="form-control" rows="3"></textarea>
+
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Image</label>
@@ -48,24 +41,18 @@
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Meta Title*</label>
-                            <input type="text" name="meta_title" class="form-control" />
-                            @error('meta_title')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <input type="text" name="meta_title" value="{{$category->meta_title}}" class="form-control" />
+
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Meta Keyword*</label>
-                            <textarea name="meta_keyword" class="form-control" rows="3"></textarea>
-                            @error('meta_keyword')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <textarea name="meta_keyword" value="{{$category->meta_keyword}}" class="form-control" rows="3"></textarea>
+
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Meta Description*</label>
-                            <textarea name="meta_description" class="form-control" rows="3"></textarea>
-                            @error('meta_description')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            <textarea name="meta_description" value="{{$category->meta_description}}" class="form-control" rows="3"></textarea>
+
                         </div>
 
                         <div class="col-md-12 mb-3">
