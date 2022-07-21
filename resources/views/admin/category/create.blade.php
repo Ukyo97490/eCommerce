@@ -6,7 +6,7 @@
     <div class="col-md-12 grid-margin">
         <div class="card">
             <div class="card-header">
-                <h4>Categories</h4>
+                <h4>Créer Categories</h4>
                 <a href="{{ url('admin/category/create') }}" class="btn btn-primary btn-sm text-white float-end">Retour</a>
             </div>
             <div class="card-body">
