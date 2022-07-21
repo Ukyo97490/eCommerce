@@ -80,3 +80,28 @@
     </div>
   </div>
 </div>
+
+ <!-- Suppression d'une Marque -->
+ <div wire:ignore.self class="modal fade" id="deleteBrandModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supprimer une marque</h5>
+        <button type="button" class="btn-close" wire:click="closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form wire:submit.prevent="destroyBrand">
+
+      <div class="modal-body">
+
+     <h4>Êtes-vous sûre de vouloir supprimer cette marque ?</h4>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" wire:click="closeModal"  class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit"  class="btn btn-primary">Supprimer</button>
+      </div>
+      
+      </form>
+    </div>
+  </div>
+</div>

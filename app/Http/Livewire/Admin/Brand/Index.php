@@ -27,6 +27,7 @@ public function resetInput()
     $this->name=NULL;
     $this->slug=NULL;
     $this->status=NULL;
+    $this->brand_id=NULL;
 }
 
 
@@ -77,7 +78,21 @@ session()->flash('message','Marque modifié avec succès !');
 $this->dispatchBrowserEvent('close-modal');
 $this->resetInput();
 }
+    // Suppression des marques
+    public function deleteBrand($brand_id)
+    {
+        $this->brand_id=$brand_id;
+    }
 
+    public function destroyBrand()
+    {
+        Brand::findOrFail($this->brand_id)->delete();
+        session()->flash('message','Marque supprimé avec succès !');
+$this->dispatchBrowserEvent('close-modal');
+$this->resetInput();
+    }
+
+    
 
     public function render()
     {
