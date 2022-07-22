@@ -20,7 +20,7 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="seotag-tab" data-bs-toggle="tab"
                                     data-bs-target="#seotag-tab-pane" type="button" role="tab"
-                                    aria-controls="seotag-tab-pane" aria-selected="false">Tags</button>
+                                    aria-controls="seotag-tab-pane" aria-selected="false">Mots-clés</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="details-tab" data-bs-toggle="tab"
