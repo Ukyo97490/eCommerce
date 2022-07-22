@@ -3,6 +3,9 @@
 @section('content')
 <div class="row">
     <div class="col-md-12 grid-margin">
+        @if(session('message'))
+        <div class="alert alert-success">{{session('message')}}</div>
+        @endauth
         <div class="card">
             <div class="card-header">
                 <h4>Produits</h4>

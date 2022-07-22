@@ -63,12 +63,12 @@ class ProductFormRequest extends FormRequest
             'integer'
            ],
            'trending' => [
-            'required',
-            'integer'
+            'nullable',
+            
            ],
            'status' => [
-            'required',
-            'integer'
+            'nullable',
+            
            ],
            'meta_title' => [
             'required',
@@ -82,6 +82,10 @@ class ProductFormRequest extends FormRequest
            'meta_description' => [
             'required',
             'string'
+           ],
+           'image'=>[
+            'nullable',
+            // 'image|mimes:jpeg,png,jpg'
            ],
 
         ];

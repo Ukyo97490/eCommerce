@@ -9,6 +9,18 @@
                     <a href="{{ url('admin/products') }}" class="btn btn-danger btn-sm text-white float-end">Retour</a>
                 </div>
                 <div class="card-body">
+
+@if ($errors->any())
+<div class="alert alert-warning" >
+    @foreach ($errors->all() as $error )
+    <div>{{$error}}</div>
+            @endforeach
+</div>
+@endif
+
+
+
+
                     <form action="{{ url('admin/products') }}" method="POST">
                         @csrf
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -80,7 +92,7 @@
                                 </div>
                                 <div class="mb-3 mt-5">
                                     <label>Meta Description</label>
-                                    <textarea name="small_description" class="form-control" rows="4"></textarea>
+                                    <textarea name="meta_description" class="form-control" rows="4"></textarea>
                                 </div>
                                 <div class="mb-3 mt-5">
                                     <label>Meta Keywords</label>
@@ -126,7 +138,7 @@
                                 aria-labelledby="image-tab" tabindex="0">
                                 <div class="mb-3 mt-5">
                                     <label>Ajouter des images au produit</label>
-                                    <input type="file" name="image" multiple class="form-control" />
+                                    <input type="file" name="image[]" multiple class="form-control" />
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary text-white">Valider</button>
